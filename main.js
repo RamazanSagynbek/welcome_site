@@ -3,7 +3,7 @@
 
 /* ====== Cafe info: edit here ====== */
 var INFO = {
-  menu: "https://rinatdidar800-dot.github.io/chailat-menu/",
+  menu: "https://chailat-menu.github.io/site/",
   hours: "08:00–02:00",
   phone: "+7 (700) 635-67-41",
   instagram: "https://www.instagram.com/chailat.kz/",
