@@ -177,6 +177,23 @@ h2{font-family:var(--serif);font-size:clamp(30px,4.4vw,48px);line-height:1.15;le
 .lb-close{position:absolute;top:-14px;right:-14px;width:42px;height:42px;border:0;border-radius:50%;background:var(--cream);color:var(--ink);font-size:24px;line-height:1;box-shadow:0 4px 16px rgba(0,0,0,.4)}
 @media (max-width:600px){.lb-close{top:8px;right:8px}}
 
+/* animated logo: letters fly in, dodge the cursor, scatter on click */
+.logo.letters{white-space:nowrap;cursor:pointer;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent}
+.logo .ch{display:inline-block;will-change:transform;transition:translate .35s cubic-bezier(.2,.8,.2,1),color .3s,text-shadow .3s}
+.logo .ch.glow{animation:glow 1.1s ease-out}
+@keyframes glow{
+  0%{color:#fff3dc;text-shadow:0 0 18px rgba(224,173,102,.95),0 0 46px rgba(224,173,102,.6)}
+  100%{color:inherit;text-shadow:none}
+}
+.intro .logo:not(.letters){visibility:hidden}
+.intro .hero-media{opacity:0;transform:scale(1.06)}
+.intro .hero-text>:not(.logo){opacity:0;transform:translateY(14px)}
+.hero-media,.hero-text>*{transition:opacity .9s ease,transform 1.1s ease}
+.hero-text>.eyebrow{transition-delay:.05s}
+.hero-text>.lead{transition-delay:.15s}
+.hero-text>.cta{transition-delay:.25s}
+.hero-text>.facts{transition-delay:.35s}
+
 /* scroll reveal */
 .js .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
 .js .reveal.in{opacity:1;transform:none}
