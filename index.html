@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CHAILAT — kitchen &amp; lounge</title>
+<meta name="description" content="CHAILAT kitchen & lounge: завтраки, авторская кухня, кальян и чай. Проспект Жамбыла, 162. Режим работы 08:00–02:00.">
+<meta name="theme-color" content="#15110d">
+<meta property="og:title" content="CHAILAT — kitchen & lounge">
+<meta property="og:description" content="Завтраки, авторская кухня, кальян и чай. Проспект Жамбыла, 162.">
+<meta property="og:image" content="img/facade.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315110d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' text-anchor='middle' fill='%23e0ad66'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600&display=swap&subset=cyrillic,cyrillic-ext,latin" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="head" id="head">
+  <div class="head-in">
+    <a href="#top" class="brand" aria-label="CHAILAT">CHAILAT</a>
+    <nav class="nav" id="nav" aria-label="Sections">
+      <a href="#about" data-i18n="navAbout"></a>
+      <a href="#kitchen" data-i18n="navKitchen"></a>
+      <a href="#lounge" data-i18n="navLounge"></a>
+      <a href="#tea" data-i18n="navTea"></a>
+      <a href="#visit" data-i18n="navVisit"></a>
+    </nav>
+    <div class="head-act">
+      <div class="lang" id="lang">
+        <button type="button" class="lang-btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false">
+          <span id="langCur">KZ</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul class="lang-menu" role="listbox" id="langMenu">
+          <li><button type="button" role="option" data-lang="kk">KZ · Қазақша</button></li>
+          <li><button type="button" role="option" data-lang="ru">RU · Русский</button></li>
+          <li><button type="button" role="option" data-lang="en">EN · English</button></li>
+        </ul>
+      </div>
+      <a class="btn btn-gold btn-sm js-menu" href="#" target="_blank" rel="noopener" data-i18n="menu"></a>
+      <button type="button" class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-media">
+      <img src="img/facade.jpg" alt="CHAILAT kitchen &amp; lounge" width="772" height="684" fetchpriority="high">
+    </div>
+    <div class="hero-text">
+      <p class="eyebrow">kitchen &amp; lounge</p>
+      <h1 class="logo">CHAILAT</h1>
+      <p class="lead" data-i18n="heroLead"></p>
+      <div class="cta">
+        <a class="btn btn-gold js-menu" href="#" target="_blank" rel="noopener" data-i18n="openMenu"></a>
+        <a class="btn btn-ghost js-map" href="#" target="_blank" rel="noopener" data-i18n="directions"></a>
+      </div>
+      <dl class="facts">
+        <div><dt>08:00</dt><dd data-i18n="factMorning"></dd></div>
+        <div><dt>02:00</dt><dd data-i18n="factNight"></dd></div>
+        <div><dt>3 in 1</dt><dd data-i18n="factThree"></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="sec paper" id="about">
+    <div class="wrap about">
+      <div class="about-text reveal">
+        <p class="kicker" data-i18n="aboutKicker"></p>
+        <h2 data-i18n="aboutTitle"></h2>
+        <p data-i18n="aboutP1"></p>
+        <p data-i18n="aboutP2"></p>
+      </div>
+      <div class="about-pics reveal">
+        <img src="img/breakfast.jpg" alt="" loading="lazy" width="733" height="1100">
+        <img src="img/tea.jpg" alt="" loading="lazy" width="1000" height="1500">
+      </div>
+    </div>
+  </section>
+
+  <!-- KITCHEN -->
+  <section class="sec paper alt" id="kitchen">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="kicker" data-i18n="kitchenKicker"></p>
+        <h2 data-i18n="kitchenTitle"></h2>
+        <p class="sub" data-i18n="kitchenSub"></p>
+      </div>
+      <div class="cats">
+        <article class="cat reveal"><img src="img/shakshuka.jpg" alt="" loading="lazy"><div><h3 data-i18n="catBreakfast"></h3><p data-i18n="catBreakfastT"></p></div></article>
+        <article class="cat reveal"><img src="img/salad.jpg" alt="" loading="lazy"><div><h3 data-i18n="catSalads"></h3><p data-i18n="catSaladsT"></p></div></article>
+        <article class="cat reveal"><img src="img/pizza.jpg" alt="" loading="lazy"><div><h3 data-i18n="catPizza"></h3><p data-i18n="catPizzaT"></p></div></article>
+        <article class="cat reveal"><img src="img/rolls.jpg" alt="" loading="lazy"><div><h3 data-i18n="catRolls"></h3><p data-i18n="catRollsT"></p></div></article>
+        <article class="cat reveal"><img src="img/ramen.jpg" alt="" loading="lazy"><div><h3 data-i18n="catSoups"></h3><p data-i18n="catSoupsT"></p></div></article>
+        <article class="cat reveal"><img src="img/steak.jpg" alt="" loading="lazy"><div><h3 data-i18n="catHot"></h3><p data-i18n="catHotT"></p></div></article>
+        <article class="cat reveal"><img src="img/croissant.jpg" alt="" loading="lazy"><div><h3 data-i18n="catSandwich"></h3><p data-i18n="catSandwichT"></p></div></article>
+        <article class="cat reveal"><img src="img/cocktail.jpg" alt="" loading="lazy"><div><h3 data-i18n="catDrinks"></h3><p data-i18n="catDrinksT"></p></div></article>
+      </div>
+      <div class="center reveal">
+        <a class="btn btn-sage js-menu" href="#" target="_blank" rel="noopener" data-i18n="fullMenu"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOUNGE -->
+  <section class="sec dark" id="lounge">
+    <div class="wrap split">
+      <div class="split-text reveal">
+        <p class="kicker" data-i18n="loungeKicker"></p>
+        <h2 data-i18n="loungeTitle"></h2>
+        <p data-i18n="loungeP"></p>
+        <ul class="ticks">
+          <li data-i18n="loungeL1"></li>
+          <li data-i18n="loungeL2"></li>
+          <li data-i18n="loungeL3"></li>
+        </ul>
+        <p class="note" data-i18n="loungeNote"></p>
+      </div>
+      <div class="mosaic reveal">
+        <img class="m-tall" src="img/hookah.jpg" alt="" loading="lazy">
+        <img src="img/hookah-smoke.jpg" alt="" loading="lazy">
+        <img src="img/hookah-fruit.jpg" alt="" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- TEA -->
+  <section class="sec dark deep" id="tea">
+    <div class="wrap split rev">
+      <div class="split-text reveal">
+        <p class="kicker" data-i18n="teaKicker"></p>
+        <h2 data-i18n="teaTitle"></h2>
+        <p data-i18n="teaP"></p>
+      </div>
+      <div class="mosaic reveal">
+        <img class="m-tall" src="img/tea-amber.jpg" alt="" loading="lazy">
+        <img src="img/teapot.jpg" alt="" loading="lazy">
+        <img src="img/lemonade.jpg" alt="" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="sec paper" id="gallery">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="kicker" data-i18n="galleryKicker"></p>
+        <h2 data-i18n="galleryTitle"></h2>
+      </div>
+      <div class="gallery" id="gallery-grid">
+        <button type="button"><img src="img/crepes.jpg" alt="" loading="lazy"></button>
+        <button type="button"><img src="img/burrata.jpg" alt="" loading="lazy"></button>
+        <button type="button"><img src="img/salmon.jpg" alt="" loading="lazy"></button>
+        <button type="button"><img src="img/lamb.jpg" alt="" loading="lazy"></button>
+        <button type="button"><img src="img/carbonara.jpg" alt="" loading="lazy"></button>
+        <button type="button"><img src="img/rolls-black.jpg" alt="" loading="lazy"></button>
+        <button type="button"><img src="img/fish.jpg" alt="" loading="lazy"></button>
+        <button type="button"><img src="img/orange.jpg" alt="" loading="lazy"></button>
+        <button type="button"><img src="img/pepperoni.jpg" alt="" loading="lazy"></button>
+        <button type="button"><img src="img/breakfast.jpg" alt="" loading="lazy"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="sec dark" id="visit">
+    <div class="wrap visit">
+      <div class="visit-text reveal">
+        <p class="kicker" data-i18n="visitKicker"></p>
+        <h2 data-i18n="visitTitle"></h2>
+        <ul class="info">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <div><small data-i18n="address"></small><b data-i18n="addressVal"></b></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5h-5"/></svg>
+            <div><small data-i18n="hours"></small><b class="js-hours"></b></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a15 15 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2C9 20 4 15 3 6a2 2 0 0 1 2-2Z"/></svg>
+            <div><small data-i18n="phone"></small><b><a class="js-tel" href="#"></a></b></div>
+          </li>
+        </ul>
+        <div class="cta">
+          <a class="btn btn-gold js-map" href="#" target="_blank" rel="noopener" data-i18n="directions"></a>
+          <a class="btn btn-ghost js-wa" href="#" target="_blank" rel="noopener" data-i18n="book"></a>
+        </div>
+        <div class="socials">
+          <a class="js-ig" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>Instagram
+          </a>
+          <a class="js-wa" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.6A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M8.5 8.5c.5 3 2 4.5 5 5l1-1.2 2 .8c-.2 1.4-1 2-2.2 2-3.4-.2-6.2-3-6.5-6.2 0-1.2.6-2 2-2.2l.8 2Z"/></svg>WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="visit-pic reveal">
+        <img src="img/facade.jpg" alt="" loading="lazy" width="772" height="684">
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span class="brand">CHAILAT</span>
+    <span>© <span id="year">2026</span> CHAILAT kitchen &amp; lounge</span>
+    <a class="js-menu" href="#" target="_blank" rel="noopener" data-i18n="openMenu"></a>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox">
+  <button type="button" class="lb-close" id="lbClose" aria-label="Close">×</button>
+  <img id="lbImg" alt="">
+</dialog>
+
+<script src="i18n.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
